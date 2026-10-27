@@ -1,0 +1,17 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "body": [
+    { "type": "Container", "style": "emphasis", "items": [
+      { "type": "TextBlock", "text": "{{Company name}}", "weight": "Bolder", "size": "Medium", "color": "Accent" },
+      { "type": "TextBlock", "text": "{{System name}}", "isSubtle": true, "size": "Small", "spacing": "None" }
+    ]},
+    { "type": "TextBlock", "text": "Status: {{Status}}", "weight": "Bolder", "color": "Good", "spacing": "Medium" },
+    { "type": "TextBlock", "text": "{{Title}}", "size": "Large", "weight": "Bolder", "wrap": true },
+    { "type": "FactSet", "facts": [
+      { "title": "Label", "value": "{{Value}}" }
+    ]}
+  ],
+  "actions": [ { "type": "Action.OpenUrl", "title": "Open app", "url": "{{App link}}" } ]
+}
